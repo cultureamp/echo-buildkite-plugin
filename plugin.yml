@@ -1,0 +1,14 @@
+name: Echo
+description: Outputs text to console
+author: https://github.com/cultureamp/echo-buildkite-plugin
+requirements:
+  - echo
+configuration:
+  properties:
+    # The string to echo
+    # eg. "cultureamp"
+    output_text:
+      type: string
+  required:
+    - output_text
+  additionalProperties: false

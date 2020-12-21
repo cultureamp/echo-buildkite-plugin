@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -e
+set -o pipefail
+set -u
+
+main() {
+  # Pass through require plugin properties:
+  export ECHO_TEXT="$BUILDKITE_PLUGIN_ECHO_OUTPUT_TEXT"
+
+  echo $ECHO_TEXT
+}
+
+main
